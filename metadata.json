@@ -1,0 +1,6 @@
+{
+  "name": "Beni Sweets Corner & Restaurant",
+  "description": "Authentic Indian sweets, savories, festive gifting, and pure vegetarian Delhi cuisine established since 1970 at Laxmi Nagar, Delhi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
