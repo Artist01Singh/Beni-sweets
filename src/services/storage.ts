@@ -15,8 +15,8 @@ import {
 } from '../data/initialProducts';
 
 const KEYS = {
-  PRODUCTS: 'beni_products_v1',
-  ORDERS: 'beni_orders_v1',
+  PRODUCTS: 'beni_products_v2',
+  ORDERS: 'beni_orders_v2',
   SETTINGS: 'beni_settings_v1',
   COUPONS: 'beni_coupons_v1',
   CUSTOMER: 'beni_customer_v1',
@@ -166,7 +166,13 @@ export const StorageService = {
   getProducts: (): Product[] => {
     try {
       const data = localStorage.getItem(KEYS.PRODUCTS);
-      if (data) return JSON.parse(data);
+      if (data) {
+        const parsed: Product[] = JSON.parse(data);
+        return parsed.map(p => ({
+          ...p,
+          image: p.image.replace(/^\/?src\/assets\/images\//, 'images/').replace(/^\/?public\//, '')
+        }));
+      }
     } catch (e) {
       console.warn('Storage read failed', e);
     }

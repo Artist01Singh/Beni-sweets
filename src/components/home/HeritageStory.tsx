@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShieldCheck, Award, HeartHandshake } from 'lucide-react';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 export const HeritageStory: React.FC = () => {
   return (
@@ -10,11 +11,11 @@ export const HeritageStory: React.FC = () => {
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative">
               <div className="rounded-2xl overflow-hidden border border-[#D6B26C]/50 shadow-xl bg-white p-2">
-                <img
-                  src="/src/assets/images/heritage_sweets_craft_1793965254490.jpg"
+                <ImageWithFallback
+                  src="images/heritage_sweets_craft.jpg"
                   alt="Heritage Halwai Confectionery Craft at Beni Sweets Delhi"
+                  fallbackTitle="Halwai Confectionery Craft"
                   className="w-full aspect-4/3 sm:aspect-16/11 object-cover rounded-xl"
-                  referrerPolicy="no-referrer"
                   loading="lazy"
                 />
               </div>

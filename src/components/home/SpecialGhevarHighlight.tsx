@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, ShoppingBag, Check } from 'lucide-react';
 import { Product } from '../../types';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 interface SpecialGhevarHighlightProps {
   ghevarProduct?: Product;
@@ -21,11 +22,11 @@ export const SpecialGhevarHighlight: React.FC<SpecialGhevarHighlightProps> = ({
             {/* Visual Box on Left (6 cols) */}
             <div className="lg:col-span-6 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-xl border-2 border-[#C5A059] bg-white">
-                <img
-                  src={ghevarProduct.image}
+                <ImageWithFallback
+                  src={ghevarProduct.image || 'images/sweets_royal_ghevar.jpg'}
                   alt={ghevarProduct.name}
+                  fallbackTitle={ghevarProduct.name}
                   className="w-full aspect-4/3 object-cover hover:scale-105 transition-transform duration-700"
-                  referrerPolicy="no-referrer"
                   loading="lazy"
                 />
                 <div className="absolute top-4 left-4 bg-[#5A121F] text-[#FAF7F2] px-3.5 py-1 rounded-full text-xs font-semibold tracking-wider uppercase border border-[#C5A059]">

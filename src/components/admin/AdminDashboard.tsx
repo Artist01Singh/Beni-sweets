@@ -34,6 +34,7 @@ import {
   TableReservation
 } from '../../types';
 import { StorageService } from '../../services/storage';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 interface AdminDashboardProps {
   products: Product[];
@@ -474,11 +475,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 <div className="space-y-3">
                   {products.filter(p => p.isBestseller).slice(0, 5).map(item => (
                     <div key={item.id} className="flex items-center gap-3 p-2 rounded-xl hover:bg-[#FAF7F2] transition-colors">
-                      <img
+                      <ImageWithFallback
                         src={item.image}
                         alt={item.name}
+                        fallbackTitle={item.name}
                         className="w-12 h-12 rounded-lg object-cover bg-[#F2EBE0]"
-                        referrerPolicy="no-referrer"
                       />
                       <div className="flex-1 min-w-0">
                         <div className="font-semibold text-xs text-[#350A11] truncate">{item.name}</div>
@@ -658,11 +659,11 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     <tr key={p.id} className="hover:bg-[#FAF7F2] transition-colors">
                       <td className="py-3 px-3">
                         <div className="flex items-center gap-3">
-                          <img
+                          <ImageWithFallback
                             src={p.image}
                             alt={p.name}
+                            fallbackTitle={p.name}
                             className="w-10 h-10 rounded-lg object-cover bg-[#FAF7F2] border border-[#E8DDCD]"
-                            referrerPolicy="no-referrer"
                           />
                           <div>
                             <div className="font-bold text-[#350A11]">{p.name}</div>

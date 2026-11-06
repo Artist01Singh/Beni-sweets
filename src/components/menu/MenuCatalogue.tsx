@@ -14,6 +14,7 @@ import {
   Minus 
 } from 'lucide-react';
 import { Product, ProductCategory } from '../../types';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 interface MenuCatalogueProps {
   products: Product[];
@@ -209,11 +210,11 @@ export const MenuCatalogue: React.FC<MenuCatalogueProps> = ({
               >
                 {/* Product Image & Badges */}
                 <div className="relative aspect-4/3 overflow-hidden bg-[#F2EBE0]">
-                  <img
+                  <ImageWithFallback
                     src={product.image}
                     alt={product.name}
+                    fallbackTitle={product.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    referrerPolicy="no-referrer"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
@@ -312,11 +313,11 @@ export const MenuCatalogue: React.FC<MenuCatalogueProps> = ({
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
           <div className="bg-white rounded-3xl border border-[#E8DDCD] max-w-lg w-full overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-200">
             <div className="relative aspect-16/10 bg-[#F2EBE0]">
-              <img
+              <ImageWithFallback
                 src={quickViewProduct.image}
                 alt={quickViewProduct.name}
+                fallbackTitle={quickViewProduct.name}
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
               <button
                 onClick={() => setQuickViewProduct(null)}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { ProductCategory } from '../../types';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 interface FeaturedCategoriesProps {
   onSelectCategory: (category: ProductCategory) => void;
@@ -16,7 +17,7 @@ export const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({
       hindi: 'पारंपरिक मिठाइयाँ',
       tagline: 'Kaju Katli, Rasmalai, Malai Ghevar & Desi Ghee Laddoos',
       itemCount: '9 Varieties',
-      image: '/src/assets/images/sweets_royal_ghevar_1793965252282.jpg'
+      image: 'images/sweets_royal_ghevar.jpg'
     },
     {
       id: 'namkeen' as ProductCategory,
@@ -24,7 +25,7 @@ export const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({
       hindi: 'नमकीन एवं चाट',
       tagline: 'Fresh Samosas, Khasta Kachori, Paneer Patties & Mixtures',
       itemCount: '5 Specialties',
-      image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg'
+      image: 'images/savories_samosa_chole.jpg'
     },
     {
       id: 'breakfast' as ProductCategory,
@@ -32,7 +33,7 @@ export const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({
       hindi: 'नाश्ता एवं भोजन',
       tagline: 'Legendary Chole Bhature, Bedmi Puri, Pav Bhaji & Dosas',
       itemCount: '6 Specialties',
-      image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg'
+      image: 'images/dish_chole_bhature.jpg'
     },
     {
       id: 'gifting' as ProductCategory,
@@ -40,7 +41,7 @@ export const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({
       hindi: 'उपहार एवं शादी बॉक्सेस',
       tagline: 'Diwali, Wedding Shagun & Luxury Corporate Hamper Boxes',
       itemCount: 'Custom Boxes',
-      image: '/src/assets/images/gift_luxury_mithai_box_1793965254075.jpg'
+      image: 'images/gift_luxury_mithai_box.jpg'
     }
   ];
 
@@ -70,11 +71,11 @@ export const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({
             >
               {/* Category Image */}
               <div className="relative aspect-4/3 overflow-hidden bg-[#F2EBE0]">
-                <img
+                <ImageWithFallback
                   src={cat.image}
                   alt={cat.title}
+                  fallbackTitle={cat.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />

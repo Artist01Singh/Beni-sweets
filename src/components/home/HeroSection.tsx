@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight, Sparkles, ShieldCheck, Heart, Award } from 'lucide-react';
 
+import { ImageWithFallback } from '../common/ImageWithFallback';
+
 interface HeroSectionProps {
   onExploreMenu: () => void;
   onExploreGifting: () => void;
@@ -80,11 +82,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Outer gold border card */}
               <div className="relative rounded-2xl overflow-hidden border-2 border-[#C5A059]/40 shadow-xl bg-white p-2">
                 <div className="relative aspect-4/3 sm:aspect-16/10 lg:aspect-4/3 rounded-xl overflow-hidden bg-[#F2EBE0]">
-                  <img
-                    src="/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg"
+                  <ImageWithFallback
+                    src="images/hero_mithai_spread.jpg"
                     alt="Artisanal Indian Sweets Platter by Beni Sweets Corner"
+                    fallbackTitle="Signature Sweets Platter"
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
-                    referrerPolicy="no-referrer"
                     loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />

@@ -12,6 +12,7 @@ import {
   Check 
 } from 'lucide-react';
 import { CartItem, Coupon, BusinessSettings } from '../../types';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -166,11 +167,11 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   key={item.product.id}
                   className="p-3.5 bg-white rounded-2xl border border-[#E8DDCD] flex items-start gap-3 shadow-2xs"
                 >
-                  <img
+                  <ImageWithFallback
                     src={item.product.image}
                     alt={item.product.name}
+                    fallbackTitle={item.product.name}
                     className="w-16 h-16 rounded-xl object-cover bg-[#F2EBE0] shrink-0 border border-[#E8DDCD]"
-                    referrerPolicy="no-referrer"
                   />
 
                   <div className="flex-1 min-w-0 space-y-1">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Gift, Sparkles, Check, Heart, ShoppingBag, ArrowRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { Product } from '../../types';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 interface GiftingStudioProps {
   sweetsList: Product[];
@@ -130,11 +131,11 @@ export const GiftingStudio: React.FC<GiftingStudioProps> = ({
             {/* Left: Box Visual Preview (5 cols) */}
             <div className="lg:col-span-5 space-y-6">
               <div className="relative rounded-2xl overflow-hidden border-2 border-[#C5A059] shadow-lg bg-[#FAF7F2] p-2">
-                <img
-                  src="/src/assets/images/gift_luxury_mithai_box_1793965254075.jpg"
+                <ImageWithFallback
+                  src="images/gift_luxury_mithai_box.jpg"
                   alt="Custom Indian Sweet Gift Hamper"
+                  fallbackTitle="Festive Gift Box"
                   className="w-full aspect-square object-cover rounded-xl"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-4 left-4 bg-[#350A11] text-[#E8D39E] text-xs font-semibold px-3 py-1 rounded-full border border-[#C5A059]">
                   Live Hamper Preview

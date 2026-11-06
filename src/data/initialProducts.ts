@@ -62,7 +62,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isSeasonal: true,
     rating: 4.9,
     reviewsCount: 312,
-    image: '/src/assets/images/sweets_royal_ghevar_1793965252282.jpg',
+    image: 'images/sweets_royal_ghevar.jpg',
     ingredients: ['Pure Desi Ghee', 'Full Cream Milk Rabri', 'Flour', 'Kesar Saffron', 'Pistachios', 'Almonds', 'Silver Vark'],
     shelfLife: '48 Hours (Refrigerated)'
   },
@@ -79,7 +79,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestseller: true,
     rating: 4.9,
     reviewsCount: 489,
-    image: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+    image: 'images/dish_kaju_katli.jpg',
     ingredients: ['Goan Cashews (W240)', 'Sugar', 'Pure Desi Ghee', 'Pure Silver Vark'],
     shelfLife: '20 Days'
   },
@@ -96,7 +96,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestseller: true,
     rating: 4.8,
     reviewsCount: 275,
-    image: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+    image: 'images/hero_mithai_spread.jpg',
     ingredients: ['Gram Flour', 'Pure Desi Ghee', 'Kashmiri Kesar', 'Cardamom', 'Melon Seeds'],
     shelfLife: '7 Days'
   },
@@ -110,9 +110,10 @@ export const INITIAL_PRODUCTS: Product[] = [
     weightOrServing: '500g (~10 Pcs)',
     isVeg: true,
     inStock: true,
+    isBestseller: true,
     rating: 4.8,
     reviewsCount: 340,
-    image: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+    image: 'images/dish_gulab_jamun.jpg',
     ingredients: ['Fresh Khoya', 'Chenna', 'Rose Essence', 'Green Cardamom', 'Desi Ghee'],
     shelfLife: '4 Days'
   },
@@ -129,7 +130,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestseller: true,
     rating: 4.9,
     reviewsCount: 410,
-    image: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+    image: 'images/dish_rasmalai.jpg',
     ingredients: ['Fresh Cow Milk Chenna', 'Thick Rabri', 'Kashmiri Kesar', 'Pistachios', 'Cardamom'],
     shelfLife: '24 Hours (Refrigerated)'
   },
@@ -145,7 +146,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.7,
     reviewsCount: 198,
-    image: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+    image: 'images/dish_rasmalai.jpg',
     ingredients: ['Cow Milk Chenna', 'Sugar Syrup', 'Cardamom Water'],
     shelfLife: '3 Days'
   },
@@ -161,7 +162,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.8,
     reviewsCount: 220,
-    image: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+    image: 'images/hero_mithai_spread.jpg',
     ingredients: ['Condensed Buffalo Milk', 'Desi Ghee', 'Alum Touch', 'Sugar'],
     shelfLife: '10 Days'
   },
@@ -177,7 +178,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.7,
     reviewsCount: 165,
-    image: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+    image: 'images/hero_mithai_spread.jpg',
     ingredients: ['Gram Flour', 'Refined Flour', 'Pure Desi Ghee', 'Almonds', 'Pistachios'],
     shelfLife: '30 Days'
   },
@@ -193,7 +194,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.8,
     reviewsCount: 184,
-    image: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+    image: 'images/hero_mithai_spread.jpg',
     ingredients: ['Chenna', 'Mawa', 'Pistachio', 'Rose Water', 'Kesar'],
     shelfLife: '48 Hours (Refrigerated)'
   },
@@ -212,7 +213,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestseller: true,
     rating: 4.9,
     reviewsCount: 920,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Crispy Flour Crust', 'Mountain Potatoes', 'Green Peas', 'Cashews', 'House Masala'],
     shelfLife: 'Fresh Daily'
   },
@@ -228,7 +229,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.8,
     reviewsCount: 380,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Flour', 'Moong Dal', 'Hing', 'Fennel', 'Dry Spices'],
     shelfLife: 'Fresh Daily'
   },
@@ -244,7 +245,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.8,
     reviewsCount: 420,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Fresh Malai Paneer', 'Bread', 'Potato', 'Gram Flour', 'Green Chilies'],
     shelfLife: 'Fresh Daily'
   },
@@ -260,7 +261,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.7,
     reviewsCount: 210,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Flaky Pastry Puff', 'Spiced Paneer', 'Herbs', 'Black Pepper'],
     shelfLife: 'Fresh Daily'
   },
@@ -277,7 +278,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestseller: true,
     rating: 4.8,
     reviewsCount: 310,
-    image: '/src/assets/images/gift_luxury_mithai_box_1793965254075.jpg',
+    image: 'images/gift_luxury_mithai_box.jpg',
     ingredients: ['Gram Flour Sev', 'Cashews', 'Almonds', 'Cornflakes', 'Curry Leaves', 'Rock Salt'],
     shelfLife: '60 Days'
   },
@@ -296,7 +297,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestseller: true,
     rating: 4.9,
     reviewsCount: 1420,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/dish_chole_bhature.jpg',
     ingredients: ['Pindi Chole', 'Fluffy Bhature', 'Hing Masala', 'Pickled Onions', 'Mint Chutney'],
     shelfLife: 'Served Hot'
   },
@@ -312,7 +313,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.8,
     reviewsCount: 680,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Urad Dal Puris', 'Hing Potato Gravy', 'Sweet Kaddu', 'Chili Pickle'],
     shelfLife: 'Served Hot'
   },
@@ -328,7 +329,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.7,
     reviewsCount: 390,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Khasta Kachoris', 'Aloo Curry', 'Imli Saunth', 'Coriander'],
     shelfLife: 'Served Hot'
   },
@@ -345,7 +346,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestseller: true,
     rating: 4.8,
     reviewsCount: 520,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Amul Butter', 'Fresh Veggies', 'Tawa Masala', 'Toasted Pavs', 'Fresh Lemon'],
     shelfLife: 'Served Hot'
   },
@@ -361,7 +362,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.8,
     reviewsCount: 450,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Fermented Batter', 'Spiced Potato', 'Toor Dal Sambar', 'Coconut Chutney'],
     shelfLife: 'Served Hot'
   },
@@ -377,7 +378,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.6,
     reviewsCount: 190,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Rice Lentil Batter', 'Onion', 'Tomato', 'Capsicum', 'Sambar'],
     shelfLife: 'Served Hot'
   },
@@ -396,7 +397,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestseller: true,
     rating: 4.7,
     reviewsCount: 630,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Noodles', 'Julienne Veggies', 'Dark Soy Sauce', 'Chili Garlic Sauce'],
     shelfLife: 'Served Fresh'
   },
@@ -412,7 +413,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.8,
     reviewsCount: 480,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Crispy Potato Fingers', 'Red Chili Paste', 'Soy', 'Sesame Seeds', 'Spring Onions'],
     shelfLife: 'Served Fresh'
   },
@@ -428,7 +429,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.8,
     reviewsCount: 410,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Fresh Dairy Paneer', 'Green Peppers', 'Onion', 'Ginger Garlic', 'Szechuan Sauce'],
     shelfLife: 'Served Fresh'
   },
@@ -444,7 +445,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.7,
     reviewsCount: 290,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Noodles', 'Roasted Garlic', 'Red Chilies', 'Spring Onion'],
     shelfLife: 'Served Fresh'
   },
@@ -460,7 +461,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.7,
     reviewsCount: 350,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/savories_samosa_chole.jpg',
     ingredients: ['Lachha Paratha', 'Tikka Paneer', 'Mint Mayo', 'Sliced Onions'],
     shelfLife: 'Served Fresh'
   },
@@ -479,7 +480,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestseller: true,
     rating: 4.9,
     reviewsCount: 890,
-    image: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+    image: 'images/dish_sweet_lassi.jpg',
     ingredients: ['Fresh Buffalo Yogurt', 'Thick Malai', 'Sugar', 'Cardamom', 'Pistachios'],
     shelfLife: 'Chilled'
   },
@@ -496,7 +497,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isBestseller: true,
     rating: 4.9,
     reviewsCount: 460,
-    image: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+    image: 'images/dish_sweet_lassi.jpg',
     ingredients: ['Pure Full Cream Milk', 'Almonds', 'Kashmiri Kesar', 'Cardamom', 'Pistachios'],
     shelfLife: 'Chilled'
   },
@@ -512,7 +513,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     inStock: true,
     rating: 4.5,
     reviewsCount: 110,
-    image: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+    image: 'images/dish_sweet_lassi.jpg',
     ingredients: ['Carbonated Beverage'],
     shelfLife: 'Sealed'
   },
@@ -532,7 +533,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isGifting: true,
     rating: 5.0,
     reviewsCount: 520,
-    image: '/src/assets/images/gift_luxury_mithai_box_1793965254075.jpg',
+    image: 'images/gift_luxury_mithai_box.jpg',
     ingredients: ['Kaju Katli', 'Motichoor Laddu', 'Kesar Peda', 'California Almonds & Cashews'],
     shelfLife: '15 Days'
   },
@@ -549,7 +550,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isGifting: true,
     rating: 4.9,
     reviewsCount: 230,
-    image: '/src/assets/images/gift_luxury_mithai_box_1793965254075.jpg',
+    image: 'images/gift_luxury_mithai_box.jpg',
     ingredients: ['Pure Desi Ghee Sweets', 'Dry Fruit Pan', 'Gold Vark Kaju Roll', 'Iranian Pistachios'],
     shelfLife: '15 Days'
   },
@@ -566,7 +567,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     isGifting: true,
     rating: 4.8,
     reviewsCount: 175,
-    image: '/src/assets/images/gift_luxury_mithai_box_1793965254075.jpg',
+    image: 'images/gift_luxury_mithai_box.jpg',
     ingredients: ['Kaju Katli', 'Roasted Almonds', 'Salted Cashews', 'Dry Fruit Barfi'],
     shelfLife: '20 Days'
   }

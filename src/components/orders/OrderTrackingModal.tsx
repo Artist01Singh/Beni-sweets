@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { Order, OrderStatus } from '../../types';
 import { WhatsAppService } from '../../services/whatsappService';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 interface OrderTrackingModalProps {
   initialOrder?: Order | null;
@@ -317,11 +318,11 @@ export const OrderTrackingModal: React.FC<OrderTrackingModalProps> = ({
                 {selectedOrder.items.map((item, i) => (
                   <div key={i} className="p-3.5 flex items-center justify-between text-xs gap-4">
                     <div className="flex items-center gap-3">
-                      <img
+                      <ImageWithFallback
                         src={item.product.image}
                         alt={item.product.name}
+                        fallbackTitle={item.product.name}
                         className="w-12 h-12 rounded-lg object-cover bg-[#FAF7F2] shrink-0"
-                        referrerPolicy="no-referrer"
                       />
                       <div>
                         <div className="font-semibold text-[#350A11]">{item.product.name}</div>

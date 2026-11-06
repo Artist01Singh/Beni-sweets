@@ -1,22 +1,23 @@
 import React from 'react';
 import { Instagram, ExternalLink } from 'lucide-react';
+import { ImageWithFallback } from '../common/ImageWithFallback';
 
 export const InstagramGallery: React.FC = () => {
   const images = [
     {
-      src: '/src/assets/images/hero_luxury_mithai_spread_1793965253133.jpg',
+      src: 'images/hero_mithai_spread.jpg',
       caption: 'Pure Desi Ghee Diamond Kaju Katli & Saffron Laddoos'
     },
     {
-      src: '/src/assets/images/sweets_royal_ghevar_1793965252282.jpg',
+      src: 'images/sweets_royal_ghevar.jpg',
       caption: 'The Royal Malai Ghevar in our signature commemorative tin'
     },
     {
-      src: '/src/assets/images/savories_samosa_chole_1793965253254.jpg',
+      src: 'images/savories_samosa_chole.jpg',
       caption: 'Sunday mornings in Delhi: piping hot Chole Bhature & Samosas'
     },
     {
-      src: '/src/assets/images/gift_luxury_mithai_box_1793965254075.jpg',
+      src: 'images/gift_luxury_mithai_box.jpg',
       caption: 'Bespoke celebratory mithai hampers for wedding celebrations'
     }
   ];
@@ -52,11 +53,11 @@ export const InstagramGallery: React.FC = () => {
               key={i}
               className="group relative aspect-square rounded-2xl overflow-hidden bg-[#F2EBE0] border border-[#E8DDCD] shadow-xs cursor-pointer"
             >
-              <img
+              <ImageWithFallback
                 src={img.src}
                 alt={img.caption}
+                fallbackTitle="Beni Sweets Special"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                referrerPolicy="no-referrer"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
